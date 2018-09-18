@@ -1,0 +1,41 @@
+﻿body {
+    font-family: 'Source Code Pro', monospace;
+}
+
+header {
+    background: #8A2387;
+    color: #FFFFFF;
+    font-size: 2em;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.header-links {
+    color: #FFFFFF;
+}
+
+    .header-links:active {
+        color: #CCCCCC;
+    }
+
+.content-container {
+    padding-top: 1%;
+    background: #8A2387; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(#8A2387, #F27121, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.content-holder {
+    background: #FFFFFF;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.content-render {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+footer {
+    background: #FFFFFF
+}
