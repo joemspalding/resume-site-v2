@@ -1,5 +1,11 @@
-﻿@Html.ActionLink("Goho-M", "Index", null, new { @class = "header-links" })
-| 
-@Html.ActionLink("Resume", "Resume", null, new { @class = "header-links" })
-| 
-@Html.ActionLink("Contact Me", "Contact", null, new { @class = "header-links" })
+﻿<div class="visible-xs">
+    Joe Spalding    <span class="text-right glyphicon glyphicon-menu-hamburger"></span>
+</div>
+
+<div class="visible-lg visible-md visible-sm">
+    @Html.ActionLink("Joe Spalding", "Index", null, new { @class = "header-links" })
+    |
+    @Html.ActionLink("Resume", "Resume", null, new { @class = "header-links" })
+    |
+    @Html.ActionLink("Contact Me", "Contact", null, new { @class = "header-links" })
+</div>
