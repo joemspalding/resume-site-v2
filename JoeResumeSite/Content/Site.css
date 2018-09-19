@@ -33,8 +33,6 @@ header {
 
 .content-holder {
     background: #FFFFFF;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
 }
 
 .content-render {
@@ -43,6 +41,9 @@ header {
     height: 800px;
 }
 
+.resume-holder {
+	height:800px;
+}
 .resume {
     height:100%;
     width:100%;
@@ -51,8 +52,10 @@ footer {
     background: #FFFFFF
 }
 
-@media only screen and (max-width: 768px) {
-    .content-holder {
-        background: #FFFFFF;
-    }
+@media only screen and (min-width: 570px) {
+	.content-holder {
+		background: #FFFFFF;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+	}
 }
