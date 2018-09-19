@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/bundles/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Styles.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/bundles/font-awesome")
 </head>
 <body>
-    <div class="row">
-        <header class="col-xs-12">
-            @Html.Partial("_Header")
-        </header>
-
-    </div>
-    <div class="content-container row">
+    <header class="row header">
         <div class="col-sm-1"></div>
-        <div class="content-holder col-sm-10 ">
+        <div class="col-10 text-center">
+            @Html.Partial("_Header")
+        </div>
+        <div class="col-sm-auto"></div>
+    </header>
+    <div class="content-container row">
+        <div class="col-sm-2"></div>
+        <div class="content-holder col-sm-8 col-12">
             <div class="content-render">
                 @RenderBody()
             </div>
@@ -26,13 +30,12 @@
     </div>
 
 
-    <footer>
+    <footer class="row">
+        
         @Html.Partial("_Footer")
 
     </footer>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
 </html>

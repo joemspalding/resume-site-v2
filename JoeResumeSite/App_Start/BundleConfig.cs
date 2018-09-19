@@ -7,6 +7,8 @@ namespace JoeResumeSite
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
+            
+
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
@@ -18,10 +20,17 @@ namespace JoeResumeSite
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap", "https://ajax.aspnetcdn.com/ajax/bootstrap/4.0.0/bootstrap.js"));
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+            bundles.Add(new StyleBundle("~/bundles/bootstrap").Include(
+                        "~/Content/bootstrap-4.css"));
+
+            bundles.Add(new StyleBundle("~/budles/font-awesome").Include(
+                        "~/Content/font-awesome"));
+
+            bundles.Add(new StyleBundle("~/bundles/css").Include(
                       "~/Content/site.css"));
+
+            BundleTable.EnableOptimizations = false;
+
         }
     }
 }

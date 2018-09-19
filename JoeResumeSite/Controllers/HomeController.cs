@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using JoeResumeSite.Models;
 
 namespace JoeResumeSite.Controllers
 {
@@ -15,7 +16,10 @@ namespace JoeResumeSite.Controllers
 
         public ActionResult Resume()
         {
-            return View();
+            ResumeViewModel model = new ResumeViewModel();
+            model.Path = "/Resources/RESUME.pdf";
+            model.MimeType = "application/pdf";
+            return View(model);
         }
 
         public ActionResult Contact()

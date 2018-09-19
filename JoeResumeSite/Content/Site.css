@@ -14,17 +14,21 @@ header {
 .header-links {
     color: #FFFFFF;
 }
+    .header-links:hover {
+        color: #DDDDDD;
+    }
 
     .header-links:active {
-        color: #CCCCCC;
+        color: #AAAAAA;
     }
 
 
 .content-container {
     padding-top: 1%;
     background: #8A2387; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387); /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(#8A2387, #F27121, #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(#8A2387, #F27121, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .content-holder {
@@ -36,8 +40,13 @@ header {
 .content-render {
     padding-top: 1%;
     padding-bottom: 1%;
+    height: 800px;
 }
 
+.resume {
+    height:100%;
+    width:100%;
+}
 footer {
     background: #FFFFFF
 }

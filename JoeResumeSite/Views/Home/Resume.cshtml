@@ -1,8 +1,7 @@
-﻿
+﻿@model JoeResumeSite.Models.ResumeViewModel
 @{
     ViewBag.Title = "Resume";
 }
 
-Hello from the resume view
-<br />
-TODO: Have a pdf copy of my resume take up the whole page
+<iframe src="@Model.Path"  class="resume" frameBorder="0" >
+</iframe>
