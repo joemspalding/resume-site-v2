@@ -1,2 +1,22 @@
-﻿<br />
-Hello from the footer
+﻿<div class="col-4">
+	Contact info
+	<br />
+	@{
+		Html.RenderPartial("PersonalContactInfo");
+	}
+</div>
+<div class="col-4">
+	Social Media
+	<ul>
+		<!--TODO: get fontawesome working here-->
+		<li>
+			<a href="https://www.linkedin.com/in/joseph-miles-spalding">
+				<i class="fab fa-linkedin fa-footer"></i>
+				LinkedIn
+			</a>
+		</li>
+	</ul>
+</div>
+<div class="col-4">
+	Error Me!
+</div>

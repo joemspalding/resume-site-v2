@@ -151,6 +151,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ContactInfoViewModel.cs" />
     <Compile Include="Models\ResumeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -161,6 +162,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Resources\Pictures\github.png" />
+    <Content Include="Resources\Pictures\linkedin.png" />
+    <Content Include="Resources\Pictures\profile-thumbnail.jfif" />
+    <Content Include="Resources\Pictures\soundcloud.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -195,6 +200,8 @@
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Home\Resume.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\ContactInfoPartial.cshtml" />
+    <Content Include="Views\Shared\PersonalContactInfo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

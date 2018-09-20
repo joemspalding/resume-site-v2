@@ -24,7 +24,7 @@ namespace JoeResumeSite
                         "~/Content/bootstrap-4.css"));
 
             bundles.Add(new StyleBundle("~/budles/font-awesome").Include(
-                        "~/Content/font-awesome"));
+                        "~/Content/font-awesome.css"));
 
             bundles.Add(new StyleBundle("~/bundles/css").Include(
                       "~/Content/site.css"));

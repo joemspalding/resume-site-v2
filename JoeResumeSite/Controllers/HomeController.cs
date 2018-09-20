@@ -26,5 +26,13 @@ namespace JoeResumeSite.Controllers
         {
             return View();
         }
+
+        public PartialViewResult ContactInfoPartial(ContactInfoViewModel model)
+        {
+            
+            //ViewBag.ImagePath = $"~/Resources/Pictures/{model.Name}.png";
+
+            return PartialView(model);
+        }
     }
 }

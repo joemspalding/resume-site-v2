@@ -1,0 +1,18 @@
+﻿@model JoeResumeSite.Models.ContactInfoViewModel
+
+<div id="@Model.Name" class="card contact-card">
+	<div class="row card-body contact-row">
+		<div class="d-none d-sm-none d-md-block col-sm-2 contact-thumbnail">
+
+			<a id="contact-thumbnail" href="@Model.Url" target="_blank">
+				<img class="contact-img" src="@Url.Content($"~/Resources/Pictures/{Model.Name}.png")" />
+			</a>
+			<!--add img for social media
+				follow naming convention so that we can call ~/Resources/Thumbnails/Model.Name-->
+		</div>
+		<div class="col-sm-10 col-xs-12 contact-text">
+			<h3>@Model.Name</h3>
+			@Model.Blurb
+		</div>
+	</div>
+</div>

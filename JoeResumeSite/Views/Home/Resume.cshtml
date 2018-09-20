@@ -1,13 +1,16 @@
 ﻿@model JoeResumeSite.Models.ResumeViewModel
 @{
-    ViewBag.Title = "Resume";
+	ViewBag.Title = "Resume";
 }
 
-<div class="row">
-	<div class="col-sm-1"></div>
-	<div class="col-sm-10 resume-holder">
-		<iframe src="@Model.Path" class="resume" frameBorder="0"></iframe>
 
+
+<div class="row">
+	<div class="col-1"></div>
+	<div class="col-10 resume-holder">
+		<object class="resume embed-responsive-item" data="@Model.Path" type="@Model.MimeType">
+			Oops! I can't load my preeeeecious pdf because you don't have a plugin for it! <a href="@Model.Path">Click here</a> to view it!
+		</object>
 	</div>
 
 </div>

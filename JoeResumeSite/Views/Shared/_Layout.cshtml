@@ -13,11 +13,11 @@
 </head>
 <body>
     <header class="row header">
-        <div class="col-sm-1"></div>
+        <div class="col-1"></div>
         <div class="col-10 text-center">
             @Html.Partial("_Header")
         </div>
-        <div class="col-sm-auto"></div>
+        <div class="col-auto"></div>
     </header>
     <div class="content-container row">
         <div class="col-sm-2"></div>
@@ -26,12 +26,10 @@
                 @RenderBody()
             </div>
         </div>
-        <div class="col-sm-1"></div>
     </div>
 
 
-    <footer class="row">
-        
+    <footer class="row text-center">
         @Html.Partial("_Footer")
 
     </footer>
