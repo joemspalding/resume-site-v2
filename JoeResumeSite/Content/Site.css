@@ -1,49 +1,136 @@
 ﻿
 body {
-    font-family: 'Source Code Pro', monospace;
+	font-family: 'Source Code Pro', monospace;
+}
+
+.text-center {
+	width: 100%;
+	text-align: center !important;
 }
 
 header {
-    background: #8A2387;
-    color: #FFFFFF;
-    font-size: 2em;
-    padding-left: 1%;
-    padding-right: 1%;
+	background: #8A2387;
+	color: #FFFFFF;
+	font-size: 2em;
+	padding-left: 1%;
+	padding-right: 1%;
 }
 
 .header-links {
-    color: #FFFFFF;
+	color: #FFFFFF;
 }
 
-    .header-links:active {
-        color: #CCCCCC;
-    }
+	.header-links:hover {
+		color: #DDDDDD;
+	}
+
+	.header-links:active {
+		color: #AAAAAA;
+	}
 
 
 .content-container {
-    padding-top: 1%;
-    background: #8A2387; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(#8A2387, #F27121, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding-top: 1%;
+	background: #8A2387; /* fallback for old browsers */
+	background: -webkit-linear-gradient(#8A2387, #F27121, #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(#8A2387, #F27121, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .content-holder {
-    background: #FFFFFF;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+	background: #FFFFFF;
 }
 
 .content-render {
-    padding-top: 1%;
-    padding-bottom: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.index-img {
+	height: 40%;
+	width: 40%;
+	border-radius: 5%;
+	margin-left: 30%;
+	margin-top: 3%;
+}
+
+.resume-holder {
+	height: 800px;
+}
+
+.resume {
+	height: 100%;
+	width: 100%;
+}
+
+.contact-thumbnail {
+	padding: 10%;
+}
+
+.contact-card {
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.contact-row {
+	margin: 1%;
+}
+
+.contact-img {
+	width: 70px;
+	height: 70px;
+	border-radius: 5%;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 footer {
-    background: #FFFFFF
+	background: #FFFFFF;
+	margin-top: 2%;
+	font-size: 1.25em;
 }
 
-@media only screen and (max-width: 768px) {
-    .content-holder {
-        background: #FFFFFF;
-    }
+.fa-footer {
+	color: #8A2387;
+}
+
+@media only screen and (min-width: 570px) {
+	.content-holder {
+		background: #FFFFFF;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+
+	.index-img {
+		height: 20%;
+		width: 20%;
+		border-radius: 5%;
+		margin-left: 40%;
+		margin-top: 2%;
+	}
+
+
+}
+
+@media only screen and (min-width:1093px) {
+	.index-img {
+		height: 20%;
+		width: 20%;
+		border-radius: 5%;
+		margin-left: 40%;
+		margin-top: 1%;
+	}
+
+	.contact-thumbnail {
+		padding: 00%;
+	}
+
+	.contact-img {
+		width: 100%;
+		height: 100%;
+		border-radius: 5%;
+	}
 }

@@ -1,13 +1,41 @@
 ﻿
 @{
-    ViewBag.Title = "Contact";
+	ViewBag.Title = "Contact  Me";
 }
 
-Hello from the contact view
-<br />
 
-TODO: Have links to all of the social media accounts (maybe even previews)
 
-<div class="resume">
-    this div will hold the resume
+<div class="container">
+	@{
+		Html.RenderPartial("PersonalContactInfo");
+	}
+	@{
+		Html.RenderPartial("ContactInfoPartial",
+			new JoeResumeSite.Models.ContactInfoViewModel
+			{
+				Name = "linkedin",
+				Blurb = @"My LinkedIn account is where you can connect with me and discuss employment opportunites. I'm currently at Waystar, but I am always open to opportunities!",
+				Url = @"https://www.linkedin.com/in/joseph-miles-spalding"
+
+			});
+	}
+	@{
+		Html.RenderPartial("ContactInfoPartial",
+			new JoeResumeSite.Models.ContactInfoViewModel
+			{
+				Name = "github",
+				Blurb = @"I run a modest shop over at github, though a useful tool for groups of developers to contribute to amazing and passionate projects, I mostly use it for $&#!-posting dumb ideas! Go ahead and follow me if you're into that!",
+				Url = @"https://github.com/joemspalding"
+			});
+	}
+	@{
+		Html.RenderPartial("ContactInfoPartial",
+			new JoeResumeSite.Models.ContactInfoViewModel
+			{
+				Name = "soundcloud",
+				Blurb = @"I mostly post crappy electronic music here, but you know what, it's MY crappy electronic music that I made! Go check it out.",
+				Url = @"https://soundcloud.com/joe-spalding-949266409"
+			});
+	}
+
 </div>

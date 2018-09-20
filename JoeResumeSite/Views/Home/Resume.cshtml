@@ -1,8 +1,16 @@
-﻿
+﻿@model JoeResumeSite.Models.ResumeViewModel
 @{
-    ViewBag.Title = "Resume";
+	ViewBag.Title = "Resume";
 }
 
-Hello from the resume view
-<br />
-TODO: Have a pdf copy of my resume take up the whole page
+
+
+<div class="row">
+	<div class="col-1"></div>
+	<div class="col-10 resume-holder">
+		<object class="resume embed-responsive-item" data="@Model.Path" type="@Model.MimeType">
+			Oops! I can't load my preeeeecious pdf because you don't have a plugin for it! <a href="@Model.Path">Click here</a> to view it!
+		</object>
+	</div>
+
+</div>
