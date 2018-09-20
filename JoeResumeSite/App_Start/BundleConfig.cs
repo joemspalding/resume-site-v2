@@ -21,7 +21,9 @@ namespace JoeResumeSite
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new StyleBundle("~/bundles/bootstrap").Include(
-                        "~/Content/bootstrap-4.css"));
+                        "~/Content/bootstrap-4.css",
+                        "~/Content/bootstrap-4-overrides"
+                        ));
 
             bundles.Add(new StyleBundle("~/bundles/font-awesome.css").Include(
                          "~/Content/fontawesome-free-5.3.1-web/css/all.css",

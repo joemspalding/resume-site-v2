@@ -18,6 +18,12 @@ namespace JoeResumeSite
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "Not Found",
+                url: "{*url}",
+                defaults: new { controller = "Error", action = "NotFound" }
+            );
         }
     }
 }
