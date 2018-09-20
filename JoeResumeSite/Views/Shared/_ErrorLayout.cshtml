@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	@Scripts.Render("~/bundles/jquery")
+	@Styles.Render("~/bundles/bootstrap")
+	@Styles.Render("~/bundles/css")
+	@Styles.Render("~/bundles/font-awesome.css")
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<title>@ViewBag.Title</title>
+</head>
+<body>
+	<header class="text-center">@ViewBag.Title</header>
+	<div class="content-container row">
+		<div class="col-sm-1"></div>
+		<div class="content-holder col-sm-10 col-12">
+			<div class="content-render">
+				@RenderBody()
+			</div>
+		</div>
+	</div>
+	<footer>
+		@Html.ActionLink("Click me to go back to a better time......", "Index", "Home")
+	</footer>
+</body>
+</html>

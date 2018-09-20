@@ -213,7 +213,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Scripts\site.js" />
+    <Content Include="Scripts\SiteScripts\headerHelper.js" />
+    <Content Include="Scripts\SiteScripts\resumeHelper.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -232,12 +233,12 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\ContactInfoPartial.cshtml" />
     <Content Include="Views\Shared\PersonalContactInfo.cshtml" />
-    <Content Include="Views\Home\FooterContactPartialView.cshtml" />
+    <Content Include="Views\Error\NotFound.cshtml" />
+    <Content Include="Views\Error\InternalError.cshtml" />
+    <Content Include="Views\Shared\_ErrorLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Infrastructure\ClassLibrary\" />
-    <Folder Include="Views\Error\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

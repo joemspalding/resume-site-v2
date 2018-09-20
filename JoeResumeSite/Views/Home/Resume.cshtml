@@ -8,9 +8,12 @@
 <div class="row">
 	<div class="col-1"></div>
 	<div class="col-10 resume-holder">
-		<object class="resume embed-responsive-item" data="@Model.Path" type="@Model.MimeType">
-			Oops! I can't load my preeeeecious pdf because you don't have a plugin for it! <a href="@Model.Path">Click here</a> to view it!
-		</object>
+		<div class="d-block d-sm-none">
+			Got a widdy-bitty browser? <a href="@Model.Path" target="_blank">Click here, I got you!</a>
+		</div>
+			<object class="resume embed-responsive-item d-none d-sm-block" data="@Model.Path" type="@Model.MimeType">
+				Oops! I can't load my preeeeecious pdf because you don't have a plugin for it! <a href="@Model.Path" target="_blank">Click here</a> to view it!
+			</object>
 	</div>
 
 </div>

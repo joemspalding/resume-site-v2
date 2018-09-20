@@ -26,6 +26,7 @@ header {
 	background: #8A2387;
 	color: #FFFFFF;
 	font-size: 2em;
+	padding-top: 1%;
 	padding-left: 1%;
 	padding-right: 1%;
 }
@@ -68,7 +69,7 @@ header {
 }
 
 .resume-holder {
-	height: 800px;
+	height: 100px;
 }
 
 .resume {
@@ -93,6 +94,10 @@ header {
 	width: 70px;
 	height: 70px;
 	border-radius: 5%;
+}
+
+.contact-personal-info {
+	font-size:1.5em;
 }
 
 .contact-blurb {
@@ -137,9 +142,11 @@ footer {
 		margin-top: 2%;
 	}
 
-	.hide-small-screen {
-		visibility: visible;
+
+	.resume-holder {
+		height: 800px;
 	}
+
 }
 
 @media only screen and (min-width:1093px) {
