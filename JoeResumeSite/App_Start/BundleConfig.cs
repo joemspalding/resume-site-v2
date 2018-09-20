@@ -7,7 +7,7 @@ namespace JoeResumeSite
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
-            
+
 
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
@@ -23,8 +23,12 @@ namespace JoeResumeSite
             bundles.Add(new StyleBundle("~/bundles/bootstrap").Include(
                         "~/Content/bootstrap-4.css"));
 
-            bundles.Add(new StyleBundle("~/budles/font-awesome").Include(
-                        "~/Content/font-awesome.css"));
+            bundles.Add(new StyleBundle("~/bundles/font-awesome.css").Include(
+                         "~/Content/fontawesome-free-5.3.1-web/css/all.css",
+                         "~/Content/fontawesome-free-5.3.1-web/css/brands.css",
+                         "~/Content/fontawesome-free-5.3.1-web/css/solid.css"
+                         ));
+            //bundles.Add(new StyleBundle("~/bundles/font-awesome.css", @"https://use.fontawesome.com/releases/v5.3.1/css/all.css"));
 
             bundles.Add(new StyleBundle("~/bundles/css").Include(
                       "~/Content/site.css"));
