@@ -7,12 +7,10 @@
 			<a id="contact-thumbnail" href="@Model.Url" target="_blank">
 				<img class="contact-img" src="@Url.Content($"~/Resources/Pictures/{Model.Name}.png")" />
 			</a>
-			<!--add img for social media
-				follow naming convention so that we can call ~/Resources/Thumbnails/Model.Name-->
 		</div>
 		<div class="col-sm-10 col-xs-12 contact-text">
-			<h3>@Model.Name</h3>
-			@Model.Blurb
+			<h3><a href="@Model.Url">@Model.Name</a></h3>
+			<p class="contact-blurb">@Model.Blurb</p>
 		</div>
 	</div>
 </div>

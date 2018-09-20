@@ -1,11 +1,17 @@
 ﻿<div class="d-block d-sm-none">
-    Joe Spalding    <span class="fa fa-bars"></span>
+    Joe Spalding    <span id="mobile-menu" class="fa fa-bars"></span>
 </div>
 
 <div class="d-none d-sm-block">
-    @Html.ActionLink("Joe Spalding", "Index", null, new { @class = "header-links" })
+    @Html.ActionLink("Joe Spalding", "Index", "Home", null, new { @class = "header-links" })
     |
-    @Html.ActionLink("Resume", "Resume", null, new { @class = "header-links" })
+    @Html.ActionLink("Resume", "Resume", "Home", null, new { @class = "header-links" })
     |
-    @Html.ActionLink("Contact Me", "Contact", null, new { @class = "header-links" })
+    @Html.ActionLink("Contact Me", "Contact", "Home", null, new { @class = "header-links" })
 </div>
+
+@section Scripts{
+	<script src="~/Scripts/">
+
+	</script>
+}

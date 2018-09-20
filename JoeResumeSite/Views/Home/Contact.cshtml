@@ -5,10 +5,12 @@
 
 
 
-<div class="container">
-	@{
-		Html.RenderPartial("PersonalContactInfo");
-	}
+	<div class="contact-personal-info text-center">
+		@{
+			Html.RenderPartial("PersonalContactInfo");
+		}
+
+	</div>
 	@{
 		Html.RenderPartial("ContactInfoPartial",
 			new JoeResumeSite.Models.ContactInfoViewModel
@@ -37,5 +39,3 @@
 				Url = @"https://soundcloud.com/joe-spalding-949266409"
 			});
 	}
-
-</div>
