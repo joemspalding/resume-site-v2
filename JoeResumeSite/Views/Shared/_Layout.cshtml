@@ -3,6 +3,16 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126098967-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-126098967-1');
+	</script>
+
 	<title>@ViewBag.Title</title>
 	@Scripts.Render("~/bundles/jquery")
 	@Styles.Render("~/bundles/bootstrap")
@@ -33,7 +43,8 @@
 
 	</footer>
 
+	@Scripts.Render("~/bundles/homejs")
 	@Scripts.Render("~/bundles/modernizr")
-	@RenderSection("scripts", required: false)
+	@RenderSection("pagescripts", required: false)
 </body>
 </html>

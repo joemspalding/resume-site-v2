@@ -1,14 +1,13 @@
 ﻿var resumeHelper = (function ($) {
 	"use strict";
 	var module = {
-		prop1: null,
 		onready: function () {
-			bindAnalyticsToResume();
+			addAnalytics();
 		}
-		
 	};
 	return module;
-	var bindAnalyticsToResume = function () {
-		ga('send', 'pageview');
-	};
+	function addAnalytics() {
+
+		gtag('config', 'GA_TRACKING_ID');
+	}
 })(jQuery);

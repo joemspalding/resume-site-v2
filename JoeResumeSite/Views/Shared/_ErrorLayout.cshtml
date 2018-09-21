@@ -17,11 +17,16 @@
 		<div class="content-holder col-sm-10 col-12">
 			<div class="content-render">
 				@RenderBody()
+				<br />
+					<div id="mainHolder" class="mainHolder" onload="pageLoad()">
+						A <span id="genre">____</span> style interpretation of<span id="storyType"></span> <span id="story">____________</span>
+					</div>
 			</div>
 		</div>
 	</div>
 	<footer>
-		@Html.ActionLink("Click me to go back to a better time......", "Index", "Home")
+		@Html.ActionLink("To free yourself from this purgatory, click here to go back to a better time......", "Index", "Home")
 	</footer>
+	@Scripts.Render("~/bundles/homejs")
 </body>
 </html>

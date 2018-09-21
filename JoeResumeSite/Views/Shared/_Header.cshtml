@@ -1,17 +1,32 @@
 ﻿<div class="d-block d-sm-none">
-    Joe Spalding    <span id="mobile-menu" class="fa fa-bars"></span>
+	Joe Spalding
 </div>
 
 <div class="d-none d-sm-block">
-    @Html.ActionLink("Joe Spalding", "Index", "Home", null, new { @class = "header-links" })
-    |
-    @Html.ActionLink("Resume", "Resume", "Home", null, new { @class = "header-links" })
-    |
-    @Html.ActionLink("Contact Me", "Contact", "Home", null, new { @class = "header-links" })
+	@Html.ActionLink("Joe Spalding", "Index", "Home", null, new { @class = "header-links" })
+	|
+	@Html.ActionLink("Resume", "Resume", "Home", null, new { @class = "header-links" })
+	|
+	@Html.ActionLink("Contact Me", "Contact", "Home", null, new { @class = "header-links" })
 </div>
 
-@section Scripts{
-	<script src="~/Scripts/">
 
-	</script>
-}
+<div class="navbar navbar-expand-sm">
+	<button class="navbar-toggler collapsed navbar-hamburger" data-toggle="collapse" data-target="#navbar-toggle-collapse">
+
+		<span id="mobile-menu" class="fa fa-bars"></span>
+	</button>
+	<div id="navbar-toggle-collapse" class="collapse navbar-collapse">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				@Html.ActionLink("Joe Spalding", "Index", "Home", null, new { @class = "header-links nav-item" })
+			</li>
+			<li class="nav-item">
+				@Html.ActionLink("Resume", "Resume", "Home", null, new { @class = "header-links" })
+			</li>
+			<li class="nav-item">
+				@Html.ActionLink("Contact Me", "Contact", "Home", null, new { @class = "header-links" })
+			</li>
+		</ul>
+	</div>
+</div>
