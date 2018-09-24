@@ -18,15 +18,26 @@
 			<div class="content-render">
 				@RenderBody()
 				<br />
-					<div id="mainHolder" class="mainHolder" onload="pageLoad()">
-						A <span id="genre">____</span> style interpretation of<span id="storyType"></span> <span id="story">____________</span>
-					</div>
+				<div id="musicalString" class="mainHolder mx-auto">
+					A <span id="genre">____</span> style interpretation of<span id="storyType"></span> <span id="story">____________</span>
+				</div>
+				<span id="makeMusicalString" class="btn-musical-string text-center">
+					Make a musical!
+				</span>
 			</div>
 		</div>
 	</div>
 	<footer>
-		@Html.ActionLink("To free yourself from this purgatory, click here to go back to a better time......", "Index", "Home")
+		@Html.ActionLink("To free yourself from this relentless purgatory, click here to return to a better time......", "Index", "Home")
 	</footer>
 	@Scripts.Render("~/bundles/homejs")
+	<script>
+
+		(function (helper) {
+			$(function () {
+				helper.onready();
+			});
+		})(errorHelper);
+	</script>
 </body>
 </html>

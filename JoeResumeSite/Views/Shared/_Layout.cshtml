@@ -42,7 +42,8 @@
 		@Html.Partial("_Footer")
 
 	</footer>
-
+	@Scripts.Render("~/bundles/bootstrapjs")
+	@Scripts.Render("~/bundles/popperjs")
 	@Scripts.Render("~/bundles/homejs")
 	@Scripts.Render("~/bundles/modernizr")
 	@RenderSection("pagescripts", required: false)

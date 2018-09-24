@@ -1,7 +1,4 @@
-﻿<div class="d-block d-sm-none">
-	Joe Spalding
-</div>
-
+﻿
 <div class="d-none d-sm-block">
 	@Html.ActionLink("Joe Spalding", "Index", "Home", null, new { @class = "header-links" })
 	|
@@ -11,13 +8,13 @@
 </div>
 
 
-<div class="navbar navbar-expand-sm">
-	<button class="navbar-toggler collapsed navbar-hamburger" data-toggle="collapse" data-target="#navbar-toggle-collapse">
-
-		<span id="mobile-menu" class="fa fa-bars"></span>
+<div class="navbar navbar-expand-sm d-sm-none">
+	<span>Joe Spalding</span>
+	<button class="navbar-toggler navbar-hamburger" data-toggle="collapse" data-target="#navbar-toggle-collapse">
+		<span id="mobile-menu" class="fa fa-bars">asdfasdf</span>
 	</button>
 	<div id="navbar-toggle-collapse" class="collapse navbar-collapse">
-		<ul class="navbar-nav">
+		<ul class="navbar-nav mx-auto">
 			<li class="nav-item">
 				@Html.ActionLink("Joe Spalding", "Index", "Home", null, new { @class = "header-links nav-item" })
 			</li>
