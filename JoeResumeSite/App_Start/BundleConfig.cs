@@ -50,10 +50,9 @@ namespace JoeResumeSite
                         ));
 
             // please work for daddy..........
-            bundles.Add(new StyleBundle("~/bundles/font-awesome.css", @"https://use.fontawesome.com/releases/v5.3.1/css/brands.css")
+            bundles.Add(new StyleBundle("~/bundles/font-awesome")//, @"https://use.fontawesome.com/releases/v5.3.1/css/brands.css")
                 .Include(
-                         "~/Content/fontawesome.min.css",
-                         new CssRewriteUrlTransform()
+                         "~/Content/font-awesome.css"
                          ));
 
             bundles.Add(new StyleBundle("~/bundles/css")
