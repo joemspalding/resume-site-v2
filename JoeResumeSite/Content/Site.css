@@ -31,6 +31,9 @@ header {
 	padding-right: 1%;
 }
 
+button.navbar-hamburger {
+	color: #FFFFFF;
+}
 .header-links {
 	color: #FFFFFF;
 }

@@ -17,3 +17,15 @@
 	</div>
 
 </div>
+
+@section pagescripts {
+	@Scripts.Render("~bundles/homejs")
+
+	<script>
+		(function (helper) {
+			$(function () {
+				helper.onready();
+			});
+		})(resumeHelper);
+	</script>
+}
