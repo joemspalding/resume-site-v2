@@ -1,0 +1,34 @@
+﻿.contact-thumbnail {
+	padding: 10%;
+}
+
+
+.contact-img {
+	width: 70px;
+	height: 70px;
+	border-radius: 5%;
+}
+
+.contact-personal-info {
+	font-size: 1.5em;
+}
+
+
+@media only screen and (min-width: 570px) {
+
+	.resume-holder {
+		height: 800px;
+	}
+}
+
+@media only screen and (min-width:1093px) {
+	.contact-thumbnail {
+		padding: 00%;
+	}
+
+	.contact-img {
+		width: 100%;
+		height: 100%;
+		border-radius: 5%;
+	}
+}

@@ -1,0 +1,72 @@
+﻿
+body {
+	font-family: 'Inconsolata', monospace;
+	background: #FFFFFF;
+}
+
+
+header {
+	background: #8A2387;
+	color: #FFFFFF;
+	font-size: 2em;
+}
+
+button.navbar-hamburger {
+	color: #FFFFFF;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.header-links {
+	color: #FFFFFF;
+}
+
+	.header-links:hover {
+		color: #DDDDDD;
+	}
+
+	.header-links:active {
+		color: #AAAAAA;
+	}
+
+.layout-gradient{
+	background: #8A2387; /* fallback for old browsers */
+	background: -webkit-linear-gradient(#8A2387, #F27121, #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(#8A2387, #F27121, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.layout-content-color {
+	background: #FFFFFF;
+}
+
+footer {
+	background: #FFFFFF;
+	padding-top: 2%;
+	font-size: 1.25em;
+	margin-bottom:2%;
+	text-overflow: ellipsis;
+}
+
+.footer-fa {
+	font-size: 3em;
+	color: #8A2387 !important;
+}
+
+
+@media only screen and (min-width: 570px) {
+	.layout-content-color {
+		background: #FFFFFF;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+
+
+}
+
+@media only screen and (min-width:1093px) {
+}

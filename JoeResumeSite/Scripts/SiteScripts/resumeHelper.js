@@ -7,7 +7,6 @@
 	};
 	return module;
 	function addAnalytics() {
-
 		gtag('config', 'GA_TRACKING_ID');
 	}
 })(jQuery);

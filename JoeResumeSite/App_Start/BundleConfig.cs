@@ -37,7 +37,7 @@ namespace JoeResumeSite
                         "~/Scripts/modernizr-*"
                         ));
 
-            bundles.Add(new ScriptBundle("~/bundles/homejs")
+            bundles.Add(new ScriptBundle("~/bundles/sitejs")
                 .Include(
                         "~/Scripts/SiteScripts/resumeHelper.js",
                         "~/Scripts/SiteScripts/errorHelper.js"
@@ -49,19 +49,24 @@ namespace JoeResumeSite
                         "~/Content/bootstrap.css"
                         ));
 
-            // please work for daddy..........
-            bundles.Add(new StyleBundle("~/bundles/font-awesome")
+            bundles.Add(new StyleBundle("~/bundles/font-awesome", @"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
                 .Include(
                          "~/Content/font-awesome.min.css", new CssRewriteUrlTransform()
                          ));
 
             bundles.Add(new StyleBundle("~/bundles/css")
                 .Include(
-                      "~/Content/site.css",
-                      "~/Content/error.css"
+                      "~/Content/Site/site.css",
+                      "~/Content/Site/about.css",
+                      "~/Content/Site/resume.css",
+                      "~/Content/Site/contact.css",
+                      "~/Content/Site/error.css",
+                      "~/Content/bootstrap-4-overrides.css"
                       ));
 
-            BundleTable.EnableOptimizations = !true;
+            bundles.Add(new ScriptBundle("~/bundles/fonts", @"https://www.googletagmanager.com/gtag/js?id=UA-126098967-1"));
+
+            BundleTable.EnableOptimizations = false;
 
         }
     }

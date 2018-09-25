@@ -1,29 +1,35 @@
 ﻿
-<div class="d-none d-sm-block">
-	@Html.ActionLink("Joe Spalding", "Index", "Home", null, new { @class = "header-links" })
-	|
-	@Html.ActionLink("Resume", "Resume", "Home", null, new { @class = "header-links" })
-	|
-	@Html.ActionLink("Contact Me", "Contact", "Home", null, new { @class = "header-links" })
-</div>
+<header class="row pt-1 pl-1 pr-1">
+	<div class="col-1"></div>
+	<div class="col-10 text-center">
+		<div class="d-none d-sm-block">
+			@Html.ActionLink("Joe Spalding", "Index", "Home", null, new { @class = "header-links" })
+			|
+			@Html.ActionLink("Resume", "Resume", "Home", null, new { @class = "header-links" })
+			|
+			@Html.ActionLink("Contact Me", "Contact", "Home", null, new { @class = "header-links" })
+		</div>
 
 
-<div class="navbar navbar-expand-sm d-sm-none">
-	<span>Joe Spalding</span>
-	<button class="navbar-toggler navbar-hamburger" data-toggle="collapse" data-target="#navbar-toggle-collapse">
-		<span id="mobile-menu" class="fa fa-bars"></span>
-	</button>
-	<div id="navbar-toggle-collapse" class="collapse navbar-collapse">
-		<ul class="navbar-nav mx-auto">
-			<li class="nav-item">
-				@Html.ActionLink("About Me", "Index", "Home", null, new { @class = "header-links nav-item" })
-			</li>
-			<li class="nav-item">
-				@Html.ActionLink("Resume", "Resume", "Home", null, new { @class = "header-links" })
-			</li>
-			<li class="nav-item">
-				@Html.ActionLink("Contact Me", "Contact", "Home", null, new { @class = "header-links" })
-			</li>
-		</ul>
+		<div class="navbar navbar-expand-sm d-sm-none">
+			<span>Joe Spalding</span>
+			<button class="navbar-toggler navbar-hamburger" data-toggle="collapse" data-target="#navbar-toggle-collapse">
+				<span id="mobile-menu" class="fa fa-bars "></span>
+			</button>
+			<div id="navbar-toggle-collapse" class="collapse navbar-collapse">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item">
+						@Html.ActionLink("About Me", "Index", "Home", null, new { @class = "header-links nav-item" })
+					</li>
+					<li class="nav-item">
+						@Html.ActionLink("Resume", "Resume", "Home", null, new { @class = "header-links" })
+					</li>
+					<li class="nav-item">
+						@Html.ActionLink("Contact Me", "Contact", "Home", null, new { @class = "header-links" })
+					</li>
+				</ul>
+			</div>
+		</div>
+
 	</div>
-</div>
+</header>

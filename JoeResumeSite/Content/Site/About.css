@@ -1,0 +1,27 @@
+﻿.index-img {
+	height: 60%;
+	width: 60%;
+	border-radius: 5%;
+	margin-left: 20%;
+	margin-top: 3%;
+}
+
+@media only screen and (min-width: 570px) {
+	.index-img {
+		height: 40%;
+		width: 40%;
+		border-radius: 5%;
+		margin-left: 30%;
+		margin-top: 2%;
+	}
+}
+
+@media only screen and (min-width:1093px) {
+	.index-img {
+		height: 20%;
+		width: 20%;
+		border-radius: 5%;
+		margin-left: 40%;
+		margin-top: 1%;
+	}
+}

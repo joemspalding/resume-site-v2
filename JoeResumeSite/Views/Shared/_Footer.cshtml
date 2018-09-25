@@ -1,31 +1,32 @@
 ﻿
+<footer class="row text-center">
 
-<div class="col-4">
-	Contact Info
-	<br />
-	@{
-		Html.RenderPartial("PersonalContactInfo");
-	}
-</div>
-
-
-
-
-<div class="col-4">
-	Social Media
-	<br />
-	<a href="https://www.linkedin.com/in/joseph-miles-spalding">
-		<i class="fa-linkedin fa-footer"></i>
-	</a>
-	<a href="https://github.com/joemspalding">
-		<i class="fab fa-github fa-footer"></i>
-	</a>
-</div>
+	<div class="col-4">
+		Contact Info
+		<br />
+		@{
+			Html.RenderPartial("_PersonalContactInfo");
+		}
+	</div>
 
 
 
-<div class="col-4">
-	@Html.ActionLink("Error Me!", "YouHorribleMonster", (string)"WhyDidYouDoThat")
-</div>
+
+	<div class="col-4">
+		Social Media
+		<br />
+			<a href="https://www.linkedin.com/in/joseph-miles-spalding" target="_blank">
+				<i class="fa-linkedin footer-fa"></i>
+			</a>
+			<a href="https://github.com/joemspalding" target="_blank">
+				<i class="fa-github footer-fa"></i>
+			</a>
+	</div>
 
 
+
+	<div class="col-4">
+		@Html.ActionLink("Error Me!", "YouHorribleMonster", "WhyDidYouDoThat")
+	</div>
+
+</footer>

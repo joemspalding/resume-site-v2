@@ -16,7 +16,7 @@ namespace JoeResumeSite.Controllers
 
         public ActionResult Resume()
         {
-            ResumeViewModel model = new ResumeViewModel();
+            ResumeViewModel model = new ResumeViewModel(); // constructor
             model.Path = "/Resources/RESUME.pdf";
             model.MimeType = "application/pdf";
             return View(model);
@@ -29,9 +29,6 @@ namespace JoeResumeSite.Controllers
 
         public PartialViewResult ContactInfoPartial(ContactInfoViewModel model)
         {
-            
-            //ViewBag.ImagePath = $"~/Resources/Pictures/{model.Name}.png";
-
             return PartialView(model);
         }
     }

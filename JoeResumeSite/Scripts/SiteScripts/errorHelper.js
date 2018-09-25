@@ -5,6 +5,8 @@ var errorHelper = (function ($) {
 		onready: function () {
 			genres = getGenres();
 			stories = getStories();
+
+			//check to see if props are initialized code from slack
 			bindMusicGeneratorClick();
 		}
 	};
@@ -19,7 +21,7 @@ var errorHelper = (function ($) {
 			let storyType = 'classics';
 			let story = getRandomArrayEle(stories[storyType]);
 
-			var storyMade = makeStoryString(genre, storyType, story)
+			let storyMade = makeStoryString(genre, storyType, story)
 
 			$("#article").text(getArticle(genre));
 			$("#genre").text(genre);

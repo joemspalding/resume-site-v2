@@ -1,0 +1,58 @@
+﻿@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	@Styles.Render("~/bundles/bootstrap")
+	@Styles.Render("~/bundles/font-awesome")
+	@Styles.Render("~/bundles/css")
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<title>@ViewBag.Title</title>
+</head>
+<body class="text-center">
+	<header>@ViewBag.Title</header>
+	<div class="row layout-gradient pt-1">
+		<div class="d-none d-sm-block col-sm-2"></div>
+		<div class="layout-content-color col-sm-8 col-12 pt-1 pb-1">
+			<div class="mt-2 mr-5 ml-5">
+				@ViewBag.Message and now you must suffer a github $#!+-post! Suffer the wrath of the random musical idea maker!!!!!
+			</div>
+			<br />
+			<div id="musicalString" class="musical-string pt-1 pb-1 mb-1">
+				<!--displayblock-->
+				<span id="article">A</span>
+				<span id="genre">____</span> style interpretation of
+				<span id="story">____________</span>
+			</div>
+			<div class="row">
+				<div class="col-3 col-md-4 col-lg-5"></div>
+				<div class="col-6 col-md-4 col-lg-2">
+					<div id="makeMusicalString" class="musical-btn no-select d-block mt-1 mb-4">
+						Make a musical!
+					</div>
+				</div>
+
+
+			</div>
+			@Html.ActionLink("To free yourself from this relentless purgatory, click here to return to a better time......", "Index", "Home")
+
+		</div>
+	</div>
+	<footer></footer>
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/fonts")
+	@Scripts.Render("~/bundles/sitejs")
+	<script>
+
+		(function (helper) {
+			$(function () {
+				helper.onready();
+			});
+		})(errorHelper);
+	</script>
+</body>
+</html>

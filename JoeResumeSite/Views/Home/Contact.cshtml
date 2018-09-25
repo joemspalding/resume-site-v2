@@ -1,4 +1,4 @@
-﻿
+﻿@using JoeResumeSite.Models
 @{
 	ViewBag.Title = "Contact  Me";
 }
@@ -7,35 +7,16 @@
 
 	<div class="contact-personal-info text-center">
 		@{
-			Html.RenderPartial("PersonalContactInfo");
+			Html.RenderPartial("_PersonalContactInfo");
 		}
 
 	</div>
 	@{
-		Html.RenderPartial("ContactInfoPartial",
-			new JoeResumeSite.Models.ContactInfoViewModel
-			{
-				Name = "linkedin",
-				Blurb = @"My LinkedIn account is where you can connect with me and discuss employment opportunites. I'm currently at Waystar, but I am always open to opportunities!",
-				Url = @"https://www.linkedin.com/in/joseph-miles-spalding"
-
-			});
+		Html.RenderPartial("_ContactInfo", ContactInfoFactory.LinkedIn);
 	}
 	@{
-		Html.RenderPartial("ContactInfoPartial",
-			new JoeResumeSite.Models.ContactInfoViewModel
-			{
-				Name = "github",
-				Blurb = @"I run a modest shop over at github, though a useful tool for groups of developers to contribute to amazing and passionate projects, I mostly use it for $&#!-posting dumb ideas! Go ahead and follow me if you're into that!",
-				Url = @"https://github.com/joemspalding"
-			});
+		Html.RenderPartial("_ContactInfo", ContactInfoFactory.GitHub);
 	}
 	@{
-		Html.RenderPartial("ContactInfoPartial",
-			new JoeResumeSite.Models.ContactInfoViewModel
-			{
-				Name = "soundcloud",
-				Blurb = @"I mostly post crappy electronic music here, but you know what, it's MY crappy electronic music that I made! Go check it out.",
-				Url = @"https://soundcloud.com/joe-spalding-949266409"
-			});
+		Html.RenderPartial("_ContactInfo", ContactInfoFactory.SoundCloud);
 	}

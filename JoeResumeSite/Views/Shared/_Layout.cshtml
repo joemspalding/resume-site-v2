@@ -4,7 +4,6 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126098967-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
@@ -14,38 +13,28 @@
 	</script>
 
 	<title>@ViewBag.Title</title>
-	@Scripts.Render("~/bundles/jquery")
 	@Styles.Render("~/bundles/bootstrap")
-	@Styles.Render("~/bundles/css")
 	@Styles.Render("~/bundles/font-awesome")
+	@Styles.Render("~/bundles/css")
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 </head>
 <body>
-	<header class="row header">
-		<div class="col-1"></div>
-		<div class="col-10 text-center">
-			@Html.Partial("_Header")
-		</div>
-		<div class="col-auto"></div>
-	</header>
-	<div class="content-container row">
-		<div class="col-sm-2"></div>
-		<div class="content-holder col-sm-8 col-12">
-			<div class="content-render">
-				@RenderBody()
-			</div>
+	@Html.Partial("_Header")
+	<div class="row layout-gradient pt-1">
+		<div class="d-none d-sm-block col-sm-2"></div>
+		<div class="layout-content-color col-sm-8 col-12 pt-1 pb-1">
+			@RenderBody()
 		</div>
 	</div>
 
+	@Html.Partial("_Footer")
 
-	<footer class="row text-center">
-		@Html.Partial("_Footer")
-
-	</footer>
+	@Scripts.Render("~/bundles/jquery")
 	@Scripts.Render("~/bundles/bootstrapjs")
 	@Scripts.Render("~/bundles/popperjs")
-	@Scripts.Render("~/bundles/homejs")
+	@Scripts.Render("~/bundles/sitejs")
 	@Scripts.Render("~/bundles/modernizr")
+	@Scripts.Render("~/bundles/fonts")
 	@RenderSection("pagescripts", required: false)
 </body>
 </html>
