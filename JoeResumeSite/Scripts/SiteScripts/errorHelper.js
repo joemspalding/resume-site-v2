@@ -21,17 +21,14 @@ var errorHelper = (function ($) {
 
 			var storyMade = makeStoryString(genre, storyType, story)
 
+			$("#article").text(getArticle(genre));
 			$("#genre").text(genre);
 			$("#story").text(story);
 			console.log(storyMade);
 		});
-		console.log('lmao');
 	}
 
-	function debugem() {
-		console.log($("#genre").text);
-		console.log($("#story").html);
-	}
+
 	// Returns spotify list of genres
 	function getGenres() {
 		//A heavily modified version of the spotify genre api
@@ -135,12 +132,6 @@ var errorHelper = (function ($) {
 			"She: A History of Adventure",
 			"The Adventures of Pinocchio",
 			"The Da Vinci Code",
-			"Harry Potter and the Chamber of Secrets",
-			"Harry Potter and the Prisoner of Azkaban",
-			"Harry Potter and the Goblet of Fire",
-			"Harry Potter and the Order of the Phoenix",
-			"Harry Potter and the Half-Blood Prince",
-			"Harry Potter and the Deathly Hallows",
 			"The Catcher in the Rye",
 			"The Adventures of Sherlock Holmes",
 			"Lolita",
@@ -187,22 +178,19 @@ var errorHelper = (function ($) {
 		]
 	}
 
-	var makeMusical = function () {
-		alert('asfasdfasdfsadfasd');
-		let genre = getRandomArrayEle(genres);
-		let storyType = 'classics';
-		let story = getRandomArrayEle(stories[storyType]);
-
-		var storyMade = makeStoryString(genre, storyType, story)
-
-		$("#genre").value = genre;
-		$("#story") = story;
-
-		console.log(storyMade)
-	};
-
 	function makeStoryString(genre, storyType, story) {
 		return `A ${genre} interpretation of ${story}`
+	}
+
+	function getArticle(genre) {
+		var vowels = ['a', 'e', 'i', 'o', 'u'];
+		for (var i = 0; i < vowels.length; i++) {
+			if (genre[0] === vowels[i]) {
+				return 'An';
+			}
+		}
+
+		return 'A';
 	}
 
 	function getRandomArrayEle(array) {

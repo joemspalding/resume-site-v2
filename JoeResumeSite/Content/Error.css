@@ -1,1 +1,28 @@
-﻿
+﻿.btn-musical-string {
+	background: #F27121;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: white;
+	user-select: none;
+	margin-bottom: 1%;
+	cursor: pointer;
+}
+
+.musical-string {
+	padding-top: 1%;
+	padding-bottom: 1%;
+	font-size: 1.8em;
+	margin-bottom: 1%;
+}
+
+.no-select {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
